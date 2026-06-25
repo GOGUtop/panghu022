@@ -1,0 +1,18 @@
+一键 GitHub 编译 APK：
+
+1. 解压这个包。
+2. 新建 GitHub 仓库。
+3. 把解压后的所有文件上传到仓库根目录，不要只上传 app 文件夹。
+4. 打开 GitHub 仓库 → Actions → Build Debug APK。
+5. 点 Run workflow。
+6. 等它完成后，在 Artifacts 下载“狗骨酒馆-debug-apk”。
+
+服务器同步接口：
+
+cd server
+npm install
+TAVERN_DATA_DIR=/home/www/SillyTavern/data SYNC_TOKEN=xixi PORT=5762 npm start
+
+默认接口：
+http://你的服务器IP:5762/xixi-api
+默认同步密码：xixi

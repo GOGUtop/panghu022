@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- 1. 删除了 background 属性，抽掉白底，实现真正的全透明背景！ -->
+    <!-- 2. 把 scaleType 改成了 fitCenter，保证你的齿轮边缘绝对不会被裁剪，完美展现！ -->
+    <ImageView
+        android:id="@+id/iv_float_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/my_icon"
+        android:scaleType="fitCenter" />
+
+</FrameLayout>

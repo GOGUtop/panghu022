@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+
+    <!-- 
+        真机访问 HTTP 酒馆入口需要允许明文流量。
+        注意：domain 只能写域名/IP，不能带 http://，也不能带端口。
+    -->
+
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">aaa.xixisillytavern.top</domain>
+        <domain includeSubdomains="true">aaa.xn--pss82d789a4qsa.top</domain>
+        <domain includeSubdomains="true">8.129.24.112</domain>
+    </domain-config>
+
+</network-security-config>
