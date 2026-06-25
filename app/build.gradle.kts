@@ -9,13 +9,13 @@ plugins {
 
 android {
     namespace = "com.xixijiuguan.mysillytavernxixi"
-    compileSdk = 36
+    compileSdk = 35
     ndkVersion = "27.2.12479018"
 
     defaultConfig {
         applicationId = "com.xixijiuguan.mysillytavernxixi"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
